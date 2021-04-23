@@ -1,2 +1,2 @@
-# centrifuge-token
-Ethereum Centrifuge Token (CFG)
+# WCFG ERC-20 Contract
+Ethereum Wrapped Centrifuge Token (wCFG)
