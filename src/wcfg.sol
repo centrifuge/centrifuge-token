@@ -23,7 +23,7 @@ contract WCFG {
   modifier auth { require(wards[msg.sender] == 1); _; }
 
   // --- ERC20 Data ---
-  string  public constant name     = "Centrifuge Wrapped Token";
+  string  public constant name     = "Wrapped Centrifuge";
   string  public constant symbol   = "wCFG";
   string  public constant version  = "1";
   uint8   public constant decimals = 18;
@@ -48,14 +48,19 @@ contract WCFG {
     require((z = x - y) <= x, "math-sub-underflow");
   }
 
-  constructor(uint256 chainId_) public {
+  constructor() public {
     wards[msg.sender] = 1;
+
+    uint chainId;
+    assembly {
+      chainId := chainid()
+    }
     DOMAIN_SEPARATOR = keccak256(
       abi.encode(
         keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)'),
         keccak256(bytes(name)),
         keccak256(bytes(version)),
-        chainId_,
+        chainId,
         address(this)
       )
     );

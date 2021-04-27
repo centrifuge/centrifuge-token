@@ -123,7 +123,7 @@ contract wcfgTest is DSTest {
     }
 
     function createwcfg() internal returns (WCFG) {
-        return new WCFG(1);
+        return new WCFG();
     }
 
     function testSetupPrecondition() public {
@@ -284,7 +284,7 @@ contract wcfgTest is DSTest {
     }
 
     function testDomain_Separator() public {
-        assertEq(wcfg.DOMAIN_SEPARATOR(), 0xd8c4cf6fb0cafceb796a57d02d0da83b5de9e840e36fe3e6558c8b9934eb62fc);
+        assertEq(wcfg.DOMAIN_SEPARATOR(), 0x96a126580244f5566e410fcf5a3db93bc3812dac29da5d11f34a0efeacdbbd67);
     }
 
     function testPermit() public {
