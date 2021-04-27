@@ -1,0 +1,12 @@
+{
+  "amber": {
+    "network": "kovan",
+    "tx": "0x3f3699578341d84f14c284a22be33f477d0fd40ca9d25af590d23de2c5e1dc68",
+    "addr": "0x2726A258f88b4e5B3a251e3d91594c527E10494D"
+  },
+  "mainnet": {
+    "network": "mainnet",
+    "tx": "",
+    "addr": ""
+  }
+}
