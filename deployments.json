@@ -6,7 +6,7 @@
   },
   "mainnet": {
     "network": "mainnet",
-    "tx": "",
-    "addr": ""
+    "tx": "0x078b1bcb884f3432a7fdd0929a2e02f9740304ebc4a1a4f0e0202bf2fc20dbea",
+    "addr": "0xc221b7E65FfC80DE234bbB6667aBDd46593D34F0"
   }
 }
